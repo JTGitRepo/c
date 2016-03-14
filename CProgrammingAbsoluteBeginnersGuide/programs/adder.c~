@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main()
+{
+
+	int iOperand1 = 0;
+	int iOperand2 = 0;
+
+	scanf("\n\tAdder Program, by John Whosits\n\nEnter first operand: %d", &iOperand1);
+	scanf("\nEnter second operand: %d", &iOperand2);
+	printf("The result is %d\n", iOperand1 + iOperand2);
+
+}

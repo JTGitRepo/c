@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+main() 
+{
+	printf("The val of EOF is %d\n\n", EOF);
+	printf("%d", getchar() != EOF);
+}

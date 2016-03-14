@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+
+main()
+{
+	int i;
+	char input;
+
+		input = getch();
+		putch(input);
+}

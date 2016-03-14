@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+main()
+{
+
+	float fA, fB, fX, fY;
+
+	fA = 5;
+	fB = 1;
+	fX = 10;
+	fY = 5;
+
+	printf("The result of the formula f = (a - b)(x - y) = %.2f\n", (fA - fB)*(fX - fY));
+
+}

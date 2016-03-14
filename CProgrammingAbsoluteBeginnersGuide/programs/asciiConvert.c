@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+main()
+{
+	char choice;
+	char quit;
+
+	printf("\n\n\n\n\n\tWelcome to the ASCII Converter. \n\nPlease Choose any character from a-z or \na number from 0-9 and I will\nreturn you the ASCII integer value. ");
+
+	printf("\nRemember, if you don't knowy, just ASCII!\n\n");
+
+	do
+	{
+		printf("please enter your number(0 - 9) or character(a-z): ");
+		scanf(" %c", &choice);
+		printf("\nYou chose %c, The ASCII integer value for %c is %d\n\n", choice, choice, (int)choice);
+		do
+		{
+		printf("Would you like to see the interger\n value of another character?(y/n) ");
+		scanf(" %c", &quit);
+		if ( quit != 'y' && quit != 'n')
+		{
+			printf("\nthat is unclear. please try again.\n");
+		} 			
+		} while (quit != 'y' && quit != 'n');
+	} while ( quit == 'y');
+}
