@@ -18,10 +18,11 @@ main()
 		{
 		printf("Would you like to see the interger\n value of another character?(y/n) ");
 		scanf(" %c", &quit);
-		if ( quit != 'y' && quit != 'n')
+		quit = tolower(quit);
+		if ((quit != 'y') && (quit != 'n'))
 		{
-			printf("\nthat is unclear. please try again.\n");
+			printf("\ninvalid input.\n");
 		} 			
-		} while (quit != 'y' && quit != 'n');
+		} while ((quit != 'y') && (quit != 'n'));
 	} while ( quit == 'y');
 }
